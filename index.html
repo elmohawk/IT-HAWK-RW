@@ -6,31 +6,41 @@
   <meta name="theme-color" content="#080d18">
   <meta name="description" content="IT HAWK RW — creative design, web development, video production, branding and digital solutions in Rwanda.">
   <meta name="keywords" content="IT HAWK RW, graphic design Rwanda, web development Rwanda, logo design, video editing, printing, digital solutions">
+  <meta name="author" content="IT HAWK RW">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="color-scheme" content="dark">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IT HAWK RW | Creative Digital Solutions">
+  <meta name="twitter:description" content="Creative design, branding, websites, video and digital production in Rwanda.">
   <meta property="og:title" content="IT HAWK RW | Creative Digital Solutions">
   <meta property="og:description" content="Ideas into impact. Design, development and digital creativity from Rwanda.">
   <meta property="og:type" content="website">
   <title>IT HAWK RW | Creative Digital Solutions</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"IT HAWK RW","alternateName":"Hawk Graphix","description":"Creative design, branding, web development, video production, printing and digital solutions in Rwanda.","telephone":"+250794669266","areaServed":{"@type":"Country","name":"Rwanda"},"sameAs":["https://www.facebook.com/mrhawk734","https://www.instagram.com/hawk_mrperfect/","https://www.tiktok.com/@mrhawk733","https://x.com/mrhawk2007","https://youtube.com/@mrhawk_rw","https://t.me/it_hawk_rw","https://wa.me/250794669266"],"image":"assets/brand/hawk-graphix.svg"}</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="IT HAWK RW home">
-        <span class="brand-mark">H<span>✦</span></span><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span>
+        <img class="brand-logo" src="assets/brand/hawk-graphix.svg" alt="Hawk Graphix logo"><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span>
       </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links">
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="primary-navigation">
         <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our work</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero section container" id="home">
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="status-dot"></span> CREATIVE THINKING. DIGITAL EXECUTION.</div>
@@ -65,24 +75,62 @@
       <div class="section-kicker reveal">02 / WHAT WE DO</div>
       <div class="section-title-row reveal"><h2 class="section-heading">Everything you need<br><span class="muted">to make your mark.</span></h2><p>Flexible services. Connected thinking.<br>One standard of quality.</p></div>
       <div class="services-grid">
-        <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon">✳</div><h3>Graphic Design</h3><p>Eye-catching visuals for campaigns, social media, marketing and print.</p><span class="service-tags">POSTERS · FLYERS · SOCIAL MEDIA</span></article>
-        <article class="service-card reveal"><span class="service-number">02</span><div class="service-icon">◈</div><h3>Branding & Logos</h3><p>Distinctive brand identities that communicate your story and values.</p><span class="service-tags">LOGOS · BRAND IDENTITY · GUIDELINES</span></article>
-        <article class="service-card reveal"><span class="service-number">03</span><div class="service-icon">⌘</div><h3>Web Development</h3><p>Responsive websites and practical digital experiences for modern brands.</p><span class="service-tags">WEBSITES · UI · WEB SOLUTIONS</span></article>
-        <article class="service-card reveal"><span class="service-number">04</span><div class="service-icon">▶</div><h3>Video & Photography</h3><p>Visual storytelling, video editing and content that captures attention.</p><span class="service-tags">VIDEO EDITING · PHOTO · CONTENT</span></article>
-        <article class="service-card reveal"><span class="service-number">05</span><div class="service-icon">▧</div><h3>Printing & Production</h3><p>Creative artwork prepared for real-world production and finishing.</p><span class="service-tags">CORELDRAW · PLOTTER · HEAT PRESS</span></article>
-        <article class="service-card reveal"><span class="service-number">06</span><div class="service-icon">⌁</div><h3>Digital Solutions</h3><p>Practical digital support and creative tools tailored to your needs.</p><span class="service-tags">DIGITAL SUPPORT · CONSULTATION</span></article>
+        <article class="service-card reveal" data-service="graphic-design"><span class="service-number">01</span><div class="service-icon">✳</div><h3>Graphic Design</h3><p>Eye-catching visuals for campaigns, social media, marketing and print.</p><span class="service-tags">POSTERS · FLYERS · SOCIAL MEDIA</span><button class="service-more" type="button" data-open-service="graphic-design" aria-haspopup="dialog">Explore service <span>↗</span></button></article>
+        <article class="service-card reveal" data-service="branding"><span class="service-number">02</span><div class="service-icon">◈</div><h3>Branding & Logos</h3><p>Distinctive brand identities that communicate your story and values.</p><span class="service-tags">LOGOS · BRAND IDENTITY · GUIDELINES</span><button class="service-more" type="button" data-open-service="branding" aria-haspopup="dialog">Explore service <span>↗</span></button></article>
+        <article class="service-card reveal" data-service="web-development"><span class="service-number">03</span><div class="service-icon">⌘</div><h3>Web Development</h3><p>Responsive websites and practical digital experiences for modern brands.</p><span class="service-tags">WEBSITES · UI · WEB SOLUTIONS</span><button class="service-more" type="button" data-open-service="web-development" aria-haspopup="dialog">Explore service <span>↗</span></button></article>
+        <article class="service-card reveal" data-service="video-photo"><span class="service-number">04</span><div class="service-icon">▶</div><h3>Video & Photography</h3><p>Visual storytelling, video editing and content that captures attention.</p><span class="service-tags">VIDEO EDITING · PHOTO · CONTENT</span><button class="service-more" type="button" data-open-service="video-photo" aria-haspopup="dialog">Explore service <span>↗</span></button></article>
+        <article class="service-card reveal" data-service="printing"><span class="service-number">05</span><div class="service-icon">▧</div><h3>Printing & Production</h3><p>Creative artwork prepared for real-world production and finishing.</p><span class="service-tags">CORELDRAW · PLOTTER · HEAT PRESS</span><button class="service-more" type="button" data-open-service="printing" aria-haspopup="dialog">Explore service <span>↗</span></button></article>
+        <article class="service-card reveal" data-service="digital-solutions"><span class="service-number">06</span><div class="service-icon">⌁</div><h3>Digital Solutions</h3><p>Practical digital support and creative tools tailored to your needs.</p><span class="service-tags">DIGITAL SUPPORT · CONSULTATION</span><button class="service-more" type="button" data-open-service="digital-solutions" aria-haspopup="dialog">Explore service <span>↗</span></button></article>
       </div>
+      <dialog class="service-dialog" id="service-dialog" aria-labelledby="service-dialog-title">
+        <button class="service-dialog-close" type="button" aria-label="Close service details">×</button>
+        <div class="service-dialog-kicker">IT HAWK RW / SERVICE DETAILS</div>
+        <div class="service-dialog-icon" id="service-dialog-icon">✳</div>
+        <h2 id="service-dialog-title">Service title</h2>
+        <p class="service-dialog-intro" id="service-dialog-intro"></p>
+        <h3>What we can create</h3>
+        <ul id="service-dialog-list"></ul>
+        <div class="service-dialog-footer"><span id="service-dialog-tags"></span><a class="button button-primary" id="service-dialog-cta" href="https://wa.me/250794669266">Ask about this service <span>↗</span></a></div>
+      </dialog>
     </div></section>
 
     <section class="section container work-section" id="work">
-      <div class="section-kicker reveal">03 / OUR APPROACH</div>
-      <div class="section-title-row reveal"><h2 class="section-heading">Good ideas deserve<br><span class="muted">great execution.</span></h2><p>Every project starts with a conversation<br>and grows through collaboration.</p></div>
-      <div class="work-grid">
-        <article class="work-card work-large reveal"><div class="work-visual visual-brand"><span class="visual-orbit"></span><b>BRAND<br>IN MOTION.</b><small>IDENTITY / VISUAL SYSTEMS</small></div><div class="work-caption"><div><h3>Brand identity & visual design</h3><p>Building a recognizable look and feel.</p></div><span>01 ↗</span></div></article>
-        <article class="work-card reveal"><div class="work-visual visual-web"><div class="browser-frame"><div class="browser-dots">● ● ●</div><div class="browser-content"><span>YOUR NEXT</span><b>DIGITAL<br>EXPERIENCE</b><i></i></div></div><small>WEB / DIGITAL EXPERIENCES</small></div><div class="work-caption"><div><h3>Web experiences</h3><p>Digital spaces built around people.</p></div><span>02 ↗</span></div></article>
-        <article class="work-card reveal"><div class="work-visual visual-motion"><span class="play-symbol">▶</span><b>MAKE IT<br>MOVE.</b><small>VIDEO / VISUAL STORYTELLING</small></div><div class="work-caption"><div><h3>Video & creative content</h3><p>Stories made to connect.</p></div><span>03 ↗</span></div></article>
+      <div class="section-kicker reveal">03 / SELECTED WORK</div>
+      <div class="section-title-row reveal"><h2 class="section-heading">A gallery of ideas<br><span class="muted">made visible.</span></h2><p>Explore selected creative categories.<br>Real project images will appear here as they are added.</p></div>
+      <div class="gallery-filters reveal" role="group" aria-label="Filter portfolio projects">
+        <button class="gallery-filter active" type="button" data-filter="all" aria-pressed="true">All work</button>
+        <button class="gallery-filter" type="button" data-filter="branding" aria-pressed="false">Branding</button>
+        <button class="gallery-filter" type="button" data-filter="graphic" aria-pressed="false">Graphic design</button>
+        <button class="gallery-filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+        <button class="gallery-filter" type="button" data-filter="video" aria-pressed="false">Video</button>
       </div>
-      <p class="work-disclaimer">These visuals illustrate our service categories. Project case studies and client work will be added as they are approved for publication.</p>
+      <div class="gallery-grid" id="portfolio-gallery">
+        <article class="gallery-card reveal" data-category="branding">
+          <div class="gallery-art gallery-brand"><span class="gallery-art-mark">H<span>✦</span></span><b>BRAND<br>IDENTITY</b><small>YOUR PROJECT IMAGE SLOT · 01</small></div>
+          <div class="gallery-caption"><div><h3>Brand identity</h3><p>Logo systems · Visual identity</p></div><span>01</span></div>
+        </article>
+        <article class="gallery-card reveal" data-category="graphic">
+          <div class="gallery-art gallery-poster"><span class="poster-kicker">CREATIVE STUDIO</span><b>MAKE<br>IT <i>MATTER.</i></b><small>YOUR PROJECT IMAGE SLOT · 02</small></div>
+          <div class="gallery-caption"><div><h3>Campaign graphics</h3><p>Posters · Flyers · Social media</p></div><span>02</span></div>
+        </article>
+        <article class="gallery-card reveal" data-category="web">
+          <div class="gallery-art gallery-interface"><div class="mini-browser"><div class="mini-browser-top">● ● ●</div><div class="mini-browser-body"><small>DIGITAL EXPERIENCES</small><b>BUILT FOR<br>WHAT'S NEXT.</b><i></i></div></div><small>YOUR PROJECT IMAGE SLOT · 03</small></div>
+          <div class="gallery-caption"><div><h3>Web design & development</h3><p>Websites · User experiences</p></div><span>03</span></div>
+        </article>
+        <article class="gallery-card reveal" data-category="video">
+          <div class="gallery-art gallery-motion"><span class="motion-play"><i class="fa-solid fa-play"></i></span><b>STORIES<br>IN MOTION.</b><small>YOUR PROJECT IMAGE SLOT · 04</small></div>
+          <div class="gallery-caption"><div><h3>Video production</h3><p>Editing · Visual storytelling</p></div><span>04</span></div>
+        </article>
+        <article class="gallery-card reveal" data-category="graphic">
+          <div class="gallery-art gallery-print"><span>PRINT / PRODUCTION</span><b>DESIGN<br>THAT <i>CONNECTS.</i></b><small>YOUR PROJECT IMAGE SLOT · 05</small></div>
+          <div class="gallery-caption"><div><h3>Print & merchandise</h3><p>Print layouts · Heat press</p></div><span>05</span></div>
+        </article>
+        <article class="gallery-card reveal" data-category="branding">
+          <div class="gallery-art gallery-social"><span class="social-orbit">✦</span><b>YOUR BRAND.<br>YOUR STORY.</b><small>YOUR PROJECT IMAGE SLOT · 06</small></div>
+          <div class="gallery-caption"><div><h3>Social media design</h3><p>Content systems · Campaigns</p></div><span>06</span></div>
+        </article>
+      </div>
+      <p class="gallery-note"><i class="fa-regular fa-image"></i> These are designed gallery placeholders, not claimed client projects. Add your approved work images in <code>assets/portfolio/</code> to turn this into your real portfolio.</p>
     </section>
 
     <section class="process-section"><div class="container section">
@@ -91,12 +139,50 @@
     </div></section>
 
     <section class="section container contact-section" id="contact">
-      <div class="contact-panel reveal"><div class="contact-copy"><div class="section-kicker">05 / HAVE A PROJECT?</div><h2>Let's make<br><span class="gradient-text">something matter.</span></h2><p>Tell us what you have in mind. Whether it’s a brand, a website or a creative project, we’re ready to hear about it.</p><a class="button button-primary" href="mailto:YOUR_EMAIL_HERE?subject=Project%20inquiry%20-%20IT%20HAWK%20RW">Email us <span>↗</span></a></div><div class="contact-side"><div class="contact-orbit">H<span>✦</span></div><span>LET'S BUILD<br>WHAT'S NEXT.</span><a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="whatsapp-link" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></div>
-      <p class="contact-note">Before launch, replace the email and WhatsApp placeholders in this page with your business contact details.</p>
+      <div class="contact-heading reveal"><div class="section-kicker">05 / START A PROJECT</div><h2 class="section-heading">Tell us what<br><span class="gradient-text">you have in mind.</span></h2><p>Complete the short form and continue directly to IT HAWK RW on WhatsApp with your project details already prepared.</p></div>
+      <div class="contact-layout">
+        <form class="inquiry-form reveal" id="inquiry-form">
+          <div class="form-heading"><span>PROJECT INQUIRY</span><small>Usually takes less than 2 minutes</small></div>
+          <div class="form-grid">
+            <label>Your name<input type="text" name="name" autocomplete="name" placeholder="Enter your name" required minlength="2"></label>
+            <label>Your email <span class="optional">(optional)</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com"></label>
+            <label>Service you need<select name="service" required><option value="">Choose a service</option><option>Graphic design</option><option>Branding & logo design</option><option>Web development</option><option>Video editing & photography</option><option>Printing & production</option><option>Social media management/design</option><option>Other digital solution</option></select></label>
+            <label>Estimated budget <span class="optional">(optional)</span><select name="budget"><option value="">Choose a budget range</option><option>Under RWF 50,000</option><option>RWF 50,000 – 150,000</option><option>RWF 150,000 – 500,000</option><option>Above RWF 500,000</option><option>Let's discuss</option></select></label>
+            <label class="form-full">Tell us about your project<textarea name="message" rows="5" placeholder="What do you want to create? Include any useful details or deadlines..." required minlength="10"></textarea></label>
+          </div>
+          <button class="button button-primary inquiry-submit" type="submit"><i class="fa-brands fa-whatsapp"></i> Send inquiry on WhatsApp <span>↗</span></button>
+          <p class="form-privacy">Your details are placed into a WhatsApp message. Nothing is stored on this website or sent to a separate database.</p>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="contact-side contact-info reveal">
+          <div class="contact-orbit">H<span>✦</span></div><span>LET'S BUILD<br>WHAT'S NEXT.</span>
+          <div class="direct-contact"><small>CALL / WHATSAPP</small><a href="tel:+250794669266">+250 794 669 266</a><a class="whatsapp-link" href="https://wa.me/250794669266?text=Hello%20IT%20HAWK%20RW%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Chat with us ↗</a></div>
+          <div class="direct-contact"><small>BASED IN</small><span>Rwanda · Available for remote projects</span></div>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer-main"><a class="brand" href="#top"><span class="brand-mark">H<span>✦</span></span><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span></a><p>Ideas into impact. Built in Rwanda.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> IT HAWK RW. All rights reserved.</span><span>DESIGN · TECHNOLOGY · CREATIVITY</span></div></footer>
-  <script src="script.js"></script>
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#top" aria-label="IT HAWK RW home"><img class="brand-logo" src="assets/brand/hawk-graphix.svg" alt="Hawk Graphix logo"><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span></a><p>Ideas into impact. Built in Rwanda.</p></div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <p class="footer-contact"><i class="fa-solid fa-phone"></i> <a href="tel:+250794669266">+250794669266</a></p>
+        <div class="social-icons">
+          <a class="social-pro facebook" href="https://www.facebook.com/mrhawk734" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i><span class="label">Facebook</span></a>
+          <a class="social-pro whatsapp" href="https://wa.me/250794669266" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span class="label">WhatsApp</span></a>
+          <a class="social-pro tiktok" href="https://www.tiktok.com/@mrhawk733" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i><span class="label">TikTok</span></a>
+          <a class="social-pro twitter" href="https://x.com/mrhawk2007" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i><span class="label">X</span></a>
+          <a class="social-pro instagram" href="https://www.instagram.com/hawk_mrperfect/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span class="label">Instagram</span></a>
+          <a class="social-pro youtube" href="https://youtube.com/@mrhawk_rw" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span class="label">YouTube</span></a>
+          <a class="social-pro telegram" href="https://t.me/it_hawk_rw" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i><span class="label">Telegram</span></a>
+        </div>
+      </div>
+      <a href="#top" class="back-top">BACK TO TOP ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> IT HAWK RW. All rights reserved.</span><span>DESIGN · TECHNOLOGY · CREATIVITY</span></div>
+  </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

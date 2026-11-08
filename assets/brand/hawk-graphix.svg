@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+<title id="title">Hawk Graphix</title><desc id="desc">Black and white circular hawk monogram with HAWK GRAPHIX lettering.</desc>
+<defs><linearGradient id="white" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dedede"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="1000" height="1000" fill="#080808"/>
+<g transform="translate(0 -8)"><circle cx="500" cy="330" r="235" fill="none" stroke="#fff" stroke-width="17"/><circle cx="500" cy="330" r="211" fill="url(#white)" stroke="#111" stroke-width="11"/>
+<text x="500" y="455" text-anchor="middle" font-family="Georgia,serif" font-size="405" font-weight="900" fill="#050505">H</text>
+<circle cx="326" cy="330" r="14" fill="#050505"/><circle cx="674" cy="330" r="14" fill="#050505"/>
+<path d="M382 402 C438 330 516 276 604 280 C655 282 686 303 694 333 C698 350 687 366 670 378 C674 359 656 350 636 350 C583 348 529 373 479 410 C439 440 408 472 382 502 C397 461 424 428 459 400 C493 372 526 351 560 338 C491 350 425 391 382 444 Z" fill="#050505"/>
+<path d="M584 302 C612 292 641 298 657 315 C644 312 632 316 624 327 C617 313 602 307 584 302Z" fill="#fff"/>
+</g>
+<text x="500" y="745" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="176" font-weight="900" letter-spacing="-9" fill="url(#white)">HAWK</text>
+<path d="M145 780 H340 L320 797 H145Z M145 812 H315 L295 829 H145Z M145 844 H290 L270 861 H145Z" fill="#fff"/>
+<text x="585" y="868" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="111" font-weight="900" letter-spacing="-3" fill="url(#white)">GRAPHIX</text>
+</svg>
