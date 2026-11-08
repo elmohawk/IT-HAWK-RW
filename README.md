@@ -6,7 +6,8 @@ Responsive dark-themed portfolio website for **IT HAWK RW**, a creative and tech
 - `index.html` — website structure, SEO metadata, portfolio gallery, inquiry form and social links
 - `styles.css` — responsive visual system, gallery and contact form styling
 - `script.js` — mobile navigation, gallery filters, reveal effects and WhatsApp inquiry handoff
-- `favicon.svg` — brand favicon
+- `favicon.svg` — Hawk emblem favicon
+- `assets/brand/hawk-graphix.svg` — scalable Hawk Graphix logo artwork
 - `.github/workflows/deploy.yml` — GitHub Pages deployment workflow
 
 ## Run locally
@@ -52,3 +53,6 @@ The workflow requires GitHub Pages to be enabled for this repository. This chang
 - Test accessibility, links and page performance.
 
 © IT HAWK RW
+
+## Brand logo
+The supplied black-and-white Hawk Graphix artwork has been recreated as a scalable SVG logo for the site header, with a matching emblem favicon. The SVG can be resized without pixelation.
