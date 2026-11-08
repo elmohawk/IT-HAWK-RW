@@ -81,3 +81,26 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
 /* Hawk Graphix brand mark */
 .brand-logo{display:block;width:68px;height:68px;object-fit:contain;border-radius:8px;flex:0 0 auto}
 @media(max-width:600px){.brand-logo{width:54px;height:54px}}
+
+
+/* Interactive service detail cards and dialog */
+.service-card{display:flex;flex-direction:column;align-items:flex-start}
+.service-card .service-tags{margin-top:auto}
+.service-more{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:0;border:0;background:transparent;color:#dcecff;font:600 10px var(--display);cursor:pointer;letter-spacing:.04em}
+.service-more span{color:var(--cyan);font-size:15px;transition:transform .2s}
+.service-more:hover{color:var(--cyan)}
+.service-more:hover span{transform:translate(3px,-3px)}
+.service-dialog{width:min(560px,calc(100% - 30px));max-width:none;max-height:min(82vh,760px);overflow:auto;padding:36px;border:1px solid rgba(66,232,224,.32);border-radius:16px;background:radial-gradient(circle at 100% 0,rgba(35,127,174,.2),transparent 35%),#0d1829;color:var(--text);box-shadow:0 30px 100px rgba(0,0,0,.65)}
+.service-dialog::backdrop{background:rgba(1,5,12,.78);backdrop-filter:blur(6px)}
+.service-dialog-close{position:absolute;right:18px;top:14px;width:35px;height:35px;border:1px solid var(--line);border-radius:50%;background:#111f32;color:#dcecff;font-size:23px;cursor:pointer}
+.service-dialog-kicker{font:600 9px var(--display);letter-spacing:.19em;color:var(--cyan)}
+.service-dialog-icon{width:54px;height:54px;margin:25px 0 15px;border:1px solid rgba(66,232,224,.3);border-radius:13px;display:grid;place-items:center;color:var(--cyan);font-size:27px;background:rgba(66,232,224,.07)}
+.service-dialog h2{font:600 clamp(27px,5vw,38px)/1.1 var(--display);letter-spacing:-.04em;margin:0 40px 12px 0}
+.service-dialog-intro{font-size:13px;line-height:1.8;color:#a8b8ce}
+.service-dialog h3{font:600 12px var(--display);margin:25px 0 12px}
+.service-dialog ul{padding-left:18px;color:#b8c7da;font-size:12px;line-height:2}
+.service-dialog li::marker{color:var(--cyan)}
+.service-dialog-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-top:25px;padding-top:20px;border-top:1px solid var(--line)}
+.service-dialog-footer>span{font:600 8px/1.8 var(--display);letter-spacing:.1em;color:#7f94af;max-width:190px}
+.service-dialog-footer .button{font-size:10px}
+@media(max-width:600px){.service-dialog{padding:28px 22px}.service-dialog-footer{align-items:flex-start;flex-direction:column}.service-dialog-footer .button{width:100%}}
