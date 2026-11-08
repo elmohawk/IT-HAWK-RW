@@ -104,3 +104,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
 .service-dialog-footer>span{font:600 8px/1.8 var(--display);letter-spacing:.1em;color:#7f94af;max-width:190px}
 .service-dialog-footer .button{font-size:10px}
 @media(max-width:600px){.service-dialog{padding:28px 22px}.service-dialog-footer{align-items:flex-start;flex-direction:column}.service-dialog-footer .button{width:100%}}
+
+
+/* Final accessibility and conversion polish */
+.skip-link{position:fixed;z-index:1000;left:16px;top:12px;padding:12px 16px;background:#fff;color:#07111f;border-radius:7px;font-weight:700;transform:translateY(-160%);transition:transform .2s}
+.skip-link:focus{transform:translateY(0)}
+.nav-links a:focus-visible,.text-link:focus-visible,.button:focus-visible{outline:2px solid var(--cyan);outline-offset:5px}
+.menu-toggle{cursor:pointer}
+.service-card,.gallery-card{overflow-wrap:anywhere}
+.footer-brand .brand-logo{width:62px;height:62px}
+@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}.skip-link{transition:none}}
