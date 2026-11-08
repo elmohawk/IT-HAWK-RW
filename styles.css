@@ -76,3 +76,8 @@
 a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
 @media(max-width:850px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-layout{grid-template-columns:1fr}.contact-info{min-height:300px}.footer-main{grid-template-columns:1fr 1fr}.footer-main>.back-top{grid-column:1/-1;justify-self:end}}
 @media(max-width:600px){.gallery-grid{grid-template-columns:1fr}.gallery-art{height:240px}.gallery-filters{gap:7px}.gallery-filter{padding:8px 12px}.inquiry-form{padding:22px 17px}.form-grid{grid-template-columns:1fr}.form-full{grid-column:auto}.form-heading{align-items:flex-start;flex-direction:column;gap:4px}.inquiry-submit{width:100%;font-size:11px}.footer-main{grid-template-columns:1fr;gap:25px}.footer-main>.back-top{grid-column:auto;justify-self:start}.social-icons{gap:9px}}
+
+
+/* Hawk Graphix brand mark */
+.brand-logo{display:block;width:68px;height:68px;object-fit:contain;border-radius:8px;flex:0 0 auto}
+@media(max-width:600px){.brand-logo{width:54px;height:54px}}
