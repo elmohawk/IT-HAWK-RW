@@ -8,7 +8,9 @@ Responsive dark-themed portfolio website for **IT HAWK RW**, a creative and tech
 - `script.js` — mobile navigation, gallery filters, reveal effects and WhatsApp inquiry handoff
 - `favicon.svg` — Hawk emblem favicon
 - `assets/brand/hawk-graphix.svg` — scalable Hawk Graphix logo artwork
-- `.github/workflows/deploy.yml` — GitHub Pages deployment workflow
+- `_headers` — Cloudflare Pages security and caching headers
+- `404.html` — branded not-found page
+- `robots.txt` — search crawler rules
 
 ## Run locally
 Open `index.html` in a browser. No build tools or package installation are required.
@@ -43,8 +45,8 @@ This repository is intended to deploy through the existing Cloudflare Pages Git 
 1. In the Cloudflare dashboard, open **Workers & Pages → your Pages project → Settings → Builds & deployments**.
 2. Confirm the connected GitHub repository is `elmohawk/IT-HAWK-RW` and the production branch is `main`.
 3. Set **Framework preset** to **None**.
-4. Leave **Build command** empty.
-5. Set **Build output directory** to `/` (the repository root).
+4. Leave **Build command** empty (or use `exit 0` if the dashboard requires a command).
+5. Set **Build output directory** to `.` (the repository root, where `index.html` lives).
 6. Save the settings. Merge the approved website changes into `main`; Cloudflare should automatically build and deploy the new commit.
 7. Check the Cloudflare Pages **Deployments** tab for the deployment status and production URL.
 
