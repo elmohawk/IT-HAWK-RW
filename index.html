@@ -6,11 +6,19 @@
   <meta name="theme-color" content="#080d18">
   <meta name="description" content="IT HAWK RW — creative design, web development, video production, branding and digital solutions in Rwanda.">
   <meta name="keywords" content="IT HAWK RW, graphic design Rwanda, web development Rwanda, logo design, video editing, printing, digital solutions">
+  <meta name="author" content="IT HAWK RW">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="color-scheme" content="dark">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IT HAWK RW | Creative Digital Solutions">
+  <meta name="twitter:description" content="Creative design, branding, websites, video and digital production in Rwanda.">
   <meta property="og:title" content="IT HAWK RW | Creative Digital Solutions">
   <meta property="og:description" content="Ideas into impact. Design, development and digital creativity from Rwanda.">
   <meta property="og:type" content="website">
   <title>IT HAWK RW | Creative Digital Solutions</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"IT HAWK RW","alternateName":"Hawk Graphix","description":"Creative design, branding, web development, video production, printing and digital solutions in Rwanda.","telephone":"+250794669266","areaServed":{"@type":"Country","name":"Rwanda"},"sameAs":["https://www.facebook.com/mrhawk734","https://www.instagram.com/hawk_mrperfect/","https://www.tiktok.com/@mrhawk733","https://x.com/mrhawk2007","https://youtube.com/@mrhawk_rw","https://t.me/it_hawk_rw","https://wa.me/250794669266"],"image":"assets/brand/hawk-graphix.svg"}</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,20 +26,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="IT HAWK RW home">
         <img class="brand-logo" src="assets/brand/hawk-graphix.svg" alt="Hawk Graphix logo"><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span>
       </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links">
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="primary-navigation">
         <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our work</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero section container" id="home">
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="status-dot"></span> CREATIVE THINKING. DIGITAL EXECUTION.</div>
@@ -156,7 +165,7 @@
 
   <footer class="footer">
     <div class="container footer-main">
-      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">H<span>✦</span></span><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span></a><p>Ideas into impact. Built in Rwanda.</p></div>
+      <div class="footer-brand"><a class="brand" href="#top" aria-label="IT HAWK RW home"><img class="brand-logo" src="assets/brand/hawk-graphix.svg" alt="Hawk Graphix logo"><span class="brand-name">IT HAWK <b>RW</b><small>CREATIVE DIGITAL STUDIO</small></span></a><p>Ideas into impact. Built in Rwanda.</p></div>
       <div class="footer-social">
         <h3>Follow Us</h3>
         <p class="footer-contact"><i class="fa-solid fa-phone"></i> <a href="tel:+250794669266">+250794669266</a></p>
@@ -174,6 +183,6 @@
     </div>
     <div class="container footer-bottom"><span>© <span id="year"></span> IT HAWK RW. All rights reserved.</span><span>DESIGN · TECHNOLOGY · CREATIVITY</span></div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
