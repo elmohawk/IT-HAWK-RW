@@ -36,14 +36,20 @@ The gallery layout and category filters are ready. The current gallery artwork i
 
 Compress images to WebP/AVIF and provide explicit width and height attributes.
 
-## Deploy with GitHub Pages
-1. Open repository **Settings → Pages**.
-2. Under **Build and deployment**, choose **GitHub Actions** as the source.
-3. Merge the website changes into `main`.
-4. The workflow in `.github/workflows/deploy.yml` will build and publish the static site on pushes to `main`.
-5. Check the **Actions** tab for the deployment result and the Pages URL in Settings → Pages.
+## Deploy with Cloudflare Pages
 
-The workflow requires GitHub Pages to be enabled for this repository. This change adds the workflow file but does not change repository settings or deploy automatically.
+This repository is intended to deploy through the existing Cloudflare Pages Git integration. No GitHub Actions deployment workflow is required.
+
+1. In the Cloudflare dashboard, open **Workers & Pages → your Pages project → Settings → Builds & deployments**.
+2. Confirm the connected GitHub repository is `elmohawk/IT-HAWK-RW` and the production branch is `main`.
+3. Set **Framework preset** to **None**.
+4. Leave **Build command** empty.
+5. Set **Build output directory** to `/` (the repository root).
+6. Save the settings. Merge the approved website changes into `main`; Cloudflare should automatically build and deploy the new commit.
+7. Check the Cloudflare Pages **Deployments** tab for the deployment status and production URL.
+
+Preview deployments may be created for other branches depending on the Cloudflare project settings. This repository change does not alter your Cloudflare account or project settings.
+
 
 ## Before launch
 - Add genuine portfolio images and project descriptions.
